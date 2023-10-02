@@ -7,13 +7,13 @@ query GetUser($email: String!) {
     avatarUrl
     description
     githubUrl
-    linkedinUrl
+    linkedInUrl
   }
 }
 `;
 
 export const createUserMutation = `
-mutaion CreateUser($input: UserCreateInput!) {
+mutation CreateUser($input: UserCreateInput!) {
   userCreate(input: $input) {
     user {
       name
@@ -21,7 +21,7 @@ mutaion CreateUser($input: UserCreateInput!) {
       avatarUrl
       description
       githubUrl
-      linkedinUrl
+      linkedInUrl
       id
     }
   }
